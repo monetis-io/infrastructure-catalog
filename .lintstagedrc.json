@@ -1,0 +1,5 @@
+{
+  "*.hcl": "pnpm lint:hcl:fix",
+  "*.tf": "pnpm lint:tf:fix",
+  "*.json": "pnpm lint:staged:fix"
+}

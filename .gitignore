@@ -1,0 +1,19 @@
+# Terragrunt
+.terragrunt-cache
+.terragrunt-stack
+
+# OpenTofu/Terraform
+.terraform
+*.tfstate
+*.tfstate.backup
+*.tfstate.lock.info
+
+# OS X
+.history
+.DS_Store
+
+# Node.js
+node_modules
+
+# Nx
+.nx
