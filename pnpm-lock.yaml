@@ -84,6 +84,8 @@ importers:
         specifier: 'catalog:'
         version: 23.0.2
 
+  modules/s3-bucket: {}
+
 packages:
 
   '@babel/code-frame@7.29.7':
