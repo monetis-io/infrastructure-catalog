@@ -1,0 +1,9 @@
+{
+  "name": "@units/s3-bucket",
+  "version": "0.0.0",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@modules/s3-bucket": "workspace:*"
+  }
+}

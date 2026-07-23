@@ -1,5 +1,6 @@
 packages:
   - modules/*
+  - units/*
 
 catalog:
   '@commitlint/cli': 21.2.1
