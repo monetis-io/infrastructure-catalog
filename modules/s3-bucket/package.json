@@ -1,6 +1,6 @@
 {
   "name": "@modules/s3-bucket",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "UNLICENSED",
   "private": true
 }
