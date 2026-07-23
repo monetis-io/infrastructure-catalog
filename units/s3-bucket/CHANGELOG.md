@@ -1,3 +1,9 @@
+## 1.1.0
+
+### 🚀 Features
+
+- **@units/s3-bucket:** use namespace in bucket name ([3c91e06](https://github.com/monetis-io/infrastructure-catalog/commit/3c91e06))
+
 # 1.0.0
 
 ### 🚀 Features
