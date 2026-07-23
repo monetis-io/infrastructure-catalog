@@ -10,7 +10,7 @@ terraform {
 }
 
 inputs = {
-  name = values.name
+  name = "${include.root.locals.namespace}-${values.name}"
 
   tags = merge(try(include.root.locals.tags, {}), try(values.tags, {}))
 }
