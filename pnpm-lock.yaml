@@ -84,6 +84,8 @@ importers:
         specifier: 'catalog:'
         version: 23.0.2
 
+  modules/acm-certificate: {}
+
   modules/s3-bucket: {}
 
   units/s3-bucket:
