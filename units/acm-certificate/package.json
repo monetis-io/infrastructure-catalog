@@ -1,0 +1,9 @@
+{
+  "name": "@units/acm-certificate",
+  "version": "0.0.0",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@modules/acm-certificate": "workspace:*"
+  }
+}
