@@ -9,6 +9,18 @@ variable "name" {
   }
 }
 
+variable "website" {
+  description = "Static website configuration"
+  type = object({
+    redirect_all_requests_to = optional(object({
+      protocol  = string
+      host_name = string
+    }))
+  })
+  nullable = true
+  default  = null
+}
+
 variable "tags" {
   description = "Tags"
   type        = map(string)

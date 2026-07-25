@@ -21,5 +21,7 @@ module "s3_bucket" {
     }
   }
 
+  website = var.website
+
   tags = var.tags
 }
