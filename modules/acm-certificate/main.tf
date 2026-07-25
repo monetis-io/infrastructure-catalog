@@ -7,7 +7,7 @@ data "aws_route53_zone" "this" {
   name = var.domain_name
 }
 
-module "acm" {
+module "acm_certificate" {
   source = "terraform-aws-modules/acm/aws"
 
   providers = {
