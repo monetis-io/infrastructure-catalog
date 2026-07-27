@@ -8,7 +8,8 @@ data "aws_route53_zone" "this" {
 }
 
 module "acm_certificate" {
-  source = "terraform-aws-modules/acm/aws"
+  source  = "terraform-aws-modules/acm/aws"
+  version = "6.3.0"
 
   providers = {
     aws = aws.us_east_1
