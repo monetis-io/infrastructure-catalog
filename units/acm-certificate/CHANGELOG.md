@@ -1,3 +1,9 @@
+## 1.0.1
+
+### 🧱 Updated Dependencies
+
+- Updated @modules/acm-certificate to 1.0.1
+
 # 1.0.0
 
 ### 🚀 Features

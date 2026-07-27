@@ -1,3 +1,10 @@
+## 1.1.0
+
+### 🚀 Features
+
+- **@modules/s3-bucket:** update outputs ([e35acb2](https://github.com/monetis-io/infrastructure-catalog/commit/e35acb2))
+- **@modules/s3-bucket:** add static website configuration input ([3ef2a43](https://github.com/monetis-io/infrastructure-catalog/commit/3ef2a43))
+
 ## 1.0.2
 
 This was a version bump only for @modules/s3-bucket to align it with other projects, there were no code changes.

@@ -1,3 +1,9 @@
+## 1.0.1
+
+### 🩹 Fixes
+
+- **@modules/acm-certificate:** rename module ([e672301](https://github.com/monetis-io/infrastructure-catalog/commit/e672301))
+
 # 1.0.0
 
 ### 🚀 Features
