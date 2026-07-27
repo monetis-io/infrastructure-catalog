@@ -86,6 +86,8 @@ importers:
 
   modules/acm-certificate: {}
 
+  modules/cloudfront-distribution: {}
+
   modules/s3-bucket: {}
 
   units/acm-certificate:
