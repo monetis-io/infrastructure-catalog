@@ -1,3 +1,13 @@
+## 1.1.0
+
+### 🚀 Features
+
+- **units/acm-certificate:** add Route53 zone name input ([69d779d](https://github.com/monetis-io/infrastructure-catalog/commit/69d779d))
+
+### 🧱 Updated Dependencies
+
+- Updated @modules/acm-certificate to 1.1.0
+
 ## 1.0.1
 
 ### 🧱 Updated Dependencies

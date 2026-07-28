@@ -1,3 +1,13 @@
+## 1.1.0
+
+### 🚀 Features
+
+- **units/cloudfront-distribution:** change unit inputs ([a2d75f6](https://github.com/monetis-io/infrastructure-catalog/commit/a2d75f6))
+
+### 🧱 Updated Dependencies
+
+- Updated @modules/cloudfront-distribution to 2.0.0
+
 # 1.0.0
 
 ### 🚀 Features

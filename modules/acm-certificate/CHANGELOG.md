@@ -1,3 +1,9 @@
+## 1.1.0
+
+### 🚀 Features
+
+- **modules/acm-certificate:** add Route53 zone name input ([a2bc421](https://github.com/monetis-io/infrastructure-catalog/commit/a2bc421))
+
 ## 1.0.1
 
 ### 🩹 Fixes
