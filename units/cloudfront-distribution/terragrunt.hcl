@@ -13,12 +13,9 @@ inputs = {
   namespace = include.root.locals.namespace
   name      = values.name
 
-  aliases = [
-    values.domain_name,
-    "www.${values.domain_name}",
-  ]
+  aliases = values.aliases
 
-  origins = values.origins
+  origins = try(values.origins, {})
 
   cache_behaviors = values.cache_behaviors
 
