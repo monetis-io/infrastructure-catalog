@@ -4,7 +4,7 @@ provider "aws" {
 }
 
 data "aws_route53_zone" "this" {
-  name = var.domain_name
+  name = var.zone_name
 }
 
 module "acm_certificate" {

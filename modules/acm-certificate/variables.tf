@@ -9,6 +9,17 @@ variable "domain_name" {
   }
 }
 
+variable "zone_name" {
+  description = "The Route53 hosted zone name"
+  type        = string
+  nullable    = false
+
+  validation {
+    condition     = length(var.zone_name) > 0
+    error_message = "Invalid Route53 hosted zone name"
+  }
+}
+
 variable "tags" {
   description = "Tags"
   type        = map(string)
