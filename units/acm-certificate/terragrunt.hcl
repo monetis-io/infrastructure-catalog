@@ -10,7 +10,8 @@ terraform {
 }
 
 inputs = {
-  domain_name = include.root.locals.environment.domain_name
+  domain_name = try(values.domain_name, include.root.locals.environment.domain_name)
+  zone_name   = try(values.zone_name, include.root.locals.account.domain_name)
 
   tags = merge(try(include.root.locals.tags, {}), try(values.tags, {}))
 }
