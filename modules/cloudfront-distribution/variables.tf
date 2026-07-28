@@ -18,7 +18,12 @@ variable "name" {
 variable "aliases" {
   description = "Alternative domain names for this Cloudfront distribution"
   type        = list(string)
-  nullable    = true
+  nullable    = false
+
+  validation {
+    condition     = length(var.aliases) > 0
+    error_message = "At least one alias is required"
+  }
 }
 
 variable "http_version" {
