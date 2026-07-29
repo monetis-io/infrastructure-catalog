@@ -128,9 +128,11 @@ module "cloudfront_distribution" {
 
   custom_error_response = var.custom_error_response
 
-  viewer_certificate = {
+  viewer_certificate = var.acm_certificate_arn != null ? {
     acm_certificate_arn = var.acm_certificate_arn
     ssl_support_method  = "sni-only"
+    } : {
+    cloudfront_default_certificate = true
   }
 
   tags = var.tags

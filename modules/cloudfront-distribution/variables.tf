@@ -19,10 +19,11 @@ variable "aliases" {
   description = "Alternative domain names for this Cloudfront distribution"
   type        = list(string)
   nullable    = false
+  default     = []
 
   validation {
-    condition     = length(var.aliases) > 0
-    error_message = "At least one alias is required"
+    condition     = var.acm_certificate_arn == null || length(var.aliases) > 0
+    error_message = "At least one alias is required when using a custom ACM certificate"
   }
 }
 
@@ -160,7 +161,13 @@ variable "custom_error_response" {
 variable "acm_certificate_arn" {
   description = "ACM certificate ARN for this Cloudfront distribution"
   type        = string
-  nullable    = false
+  nullable    = true
+  default     = null
+
+  validation {
+    condition     = length(var.aliases) == 0 || var.acm_certificate_arn != null
+    error_message = "Missing ACM certificate for the provided aliases"
+  }
 }
 
 variable "tags" {
