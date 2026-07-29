@@ -13,15 +13,15 @@ inputs = {
   namespace = include.root.locals.namespace
   name      = values.name
 
-  aliases = values.aliases
+  aliases = try(values.aliases, [])
 
   origins = try(values.origins, {})
 
-  cache_behaviors = values.cache_behaviors
+  cache_behaviors = try(values.cache_behaviors, [])
 
   custom_error_response = values.custom_error_response
 
-  acm_certificate_arn = values.acm_certificate_arn
+  acm_certificate_arn = try(values.acm_certificate_arn, null)
 
   tags = merge(try(include.root.locals.tags, {}), try(values.tags, {}))
 }
