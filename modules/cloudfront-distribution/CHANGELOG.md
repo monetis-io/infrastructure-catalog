@@ -1,3 +1,9 @@
+## 2.0.1
+
+### 🩹 Fixes
+
+- **@modules/cloudfront-distribution:** ensure correct variable wiring ([e295593](https://github.com/monetis-io/infrastructure-catalog/commit/e295593))
+
 # 2.0.0
 
 ### 🚀 Features

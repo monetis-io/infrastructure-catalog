@@ -1,3 +1,13 @@
+## 1.1.1
+
+### 🩹 Fixes
+
+- **@units/cloudfront-distribution:** set default values ([fc74b2d](https://github.com/monetis-io/infrastructure-catalog/commit/fc74b2d))
+
+### 🧱 Updated Dependencies
+
+- Updated @modules/cloudfront-distribution to 2.0.1
+
 ## 1.1.0
 
 ### 🚀 Features
