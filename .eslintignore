@@ -5,8 +5,11 @@
 .vscode
 .nx
 
-src
 node_modules
+
+modules
+units
+stacks
 
 LICENCE
 

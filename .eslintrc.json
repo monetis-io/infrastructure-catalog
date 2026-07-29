@@ -2,6 +2,21 @@
   "$schema": "https://json.schemastore.org/eslintrc",
   "root": true,
   "extends": [
-    "@fundamentry/eslint-config-json"
+    "@fundamentry/eslint-config-json",
+    "@fundamentry/eslint-config-typescript",
+    "@fundamentry/eslint-config-prettier"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "commitlint.config.ts"
+      ],
+      "env": {
+        "node": true
+      },
+      "rules": {
+        "import/no-extraneous-dependencies": "off"
+      }
+    }
   ]
 }
