@@ -1,3 +1,9 @@
+## 1.1.3
+
+### 🩹 Fixes
+
+- **@units/s3-bucket:** add missing 'website' input ([cd43d3c](https://github.com/monetis-io/infrastructure-catalog/commit/cd43d3c))
+
 ## 1.1.2
 
 ### 🧱 Updated Dependencies
