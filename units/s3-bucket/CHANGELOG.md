@@ -1,3 +1,9 @@
+## 1.1.5
+
+### 🧱 Updated Dependencies
+
+- Updated @modules/s3-bucket to 1.1.2
+
 ## 1.1.4
 
 ### 🩹 Fixes

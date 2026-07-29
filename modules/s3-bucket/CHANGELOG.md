@@ -1,3 +1,9 @@
+## 1.1.2
+
+### 🩹 Fixes
+
+- **@modules/s3-bucket:** remove 'website' input ([12da844](https://github.com/monetis-io/infrastructure-catalog/commit/12da844))
+
 ## 1.1.1
 
 ### 🩹 Fixes
