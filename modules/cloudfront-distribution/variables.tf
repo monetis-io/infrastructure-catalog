@@ -20,11 +20,6 @@ variable "aliases" {
   type        = list(string)
   nullable    = false
   default     = []
-
-  validation {
-    condition     = var.acm_certificate_arn == null || length(var.aliases) > 0
-    error_message = "At least one alias is required when using a custom ACM certificate"
-  }
 }
 
 variable "http_version" {
@@ -165,7 +160,7 @@ variable "acm_certificate_arn" {
   default     = null
 
   validation {
-    condition     = length(var.aliases) == 0 || var.acm_certificate_arn != null
+    condition     = (length(var.aliases) == 0) == (var.acm_certificate_arn == null)
     error_message = "Missing ACM certificate for the provided aliases"
   }
 }
