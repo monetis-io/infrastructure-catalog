@@ -1,3 +1,9 @@
+## 2.0.2
+
+### 🩹 Fixes
+
+- **@modules/cloudfront-distribution:** rewrite validation to avoid cycles ([9a140e0](https://github.com/monetis-io/infrastructure-catalog/commit/9a140e0))
+
 ## 2.0.1
 
 ### 🩹 Fixes

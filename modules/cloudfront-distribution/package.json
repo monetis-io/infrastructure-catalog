@@ -1,6 +1,6 @@
 {
   "name": "@modules/cloudfront-distribution",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "license": "UNLICENSED",
   "private": true
 }

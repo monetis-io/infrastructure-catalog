@@ -1,3 +1,9 @@
+## 1.1.2
+
+### 🧱 Updated Dependencies
+
+- Updated @modules/cloudfront-distribution to 2.0.2
+
 ## 1.1.1
 
 ### 🩹 Fixes
