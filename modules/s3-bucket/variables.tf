@@ -17,8 +17,8 @@ variable "website" {
       host_name = string
     }))
   })
-  nullable = true
-  default  = null
+  nullable = false
+  default  = {}
 }
 
 variable "tags" {
