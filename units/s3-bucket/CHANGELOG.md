@@ -1,3 +1,13 @@
+## 1.1.4
+
+### 🩹 Fixes
+
+- **@units/s3-bucket:** remove 'website' input ([5db4c4a](https://github.com/monetis-io/infrastructure-catalog/commit/5db4c4a))
+
+### 🧱 Updated Dependencies
+
+- Updated @modules/s3-bucket to 1.1.1
+
 ## 1.1.3
 
 ### 🩹 Fixes

@@ -1,3 +1,9 @@
+## 1.1.1
+
+### 🩹 Fixes
+
+- **@modules/s3-bucket:** use appropriate default value for 'website' variable ([17a4f82](https://github.com/monetis-io/infrastructure-catalog/commit/17a4f82))
+
 ## 1.1.0
 
 ### 🚀 Features
