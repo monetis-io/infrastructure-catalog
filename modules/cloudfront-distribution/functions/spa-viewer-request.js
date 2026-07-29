@@ -1,11 +1,23 @@
-function handler({ request }) {
-  const { uri, headers, querystring } = request;
+function handler(event) {
+  const request = event.request;
+
+  const uri = request.uri;
+  const headers = request.headers;
+  const querystring = request.querystring;
+
   const host = headers.host.value;
 
-  if (!host.startsWith('www.')) {
+  if (!host.endsWith('.cloudfront.net') && !host.startsWith('www.')) {
     const query = Object.entries(querystring)
-      .map(([param, { value, multiValue }]) => [param, multiValue || [{ value }]])
-      .map(([param, values]) => values.map(({ value }) => (value === '' ? param : `${param}=${value}`)).join('&'))
+      .map((entry) => {
+        const key = entry[0];
+        const values = entry[1].multiValue || [{ value: entry[1].value }];
+
+        return values
+          .map(item => item.value)
+          .map(value => value === '' ? key : `${key}=${value}`)
+          .join('&');
+      })
       .join('&');
 
     return {
