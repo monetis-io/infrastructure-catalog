@@ -12,7 +12,5 @@ terraform {
 inputs = {
   name = "${include.root.locals.namespace}-${values.name}"
 
-  website = try(values.website, null)
-
   tags = merge(try(include.root.locals.tags, {}), try(values.tags, {}))
 }
