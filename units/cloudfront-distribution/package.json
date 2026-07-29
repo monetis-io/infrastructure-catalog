@@ -1,6 +1,6 @@
 {
   "name": "@units/cloudfront-distribution",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {

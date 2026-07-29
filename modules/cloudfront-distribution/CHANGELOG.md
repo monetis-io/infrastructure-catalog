@@ -1,3 +1,9 @@
+## 2.0.3
+
+### 🩹 Fixes
+
+- **@modules/cloudfront-distribution:** use supported Cloudfront function syntax ([0015841](https://github.com/monetis-io/infrastructure-catalog/commit/0015841))
+
 ## 2.0.2
 
 ### 🩹 Fixes
